@@ -71,7 +71,7 @@ class ApiController extends JsonController
     /**
      * @Route("/broadcast", name="mcfedr_aws_push.broadcast")
      * @Method({"POST"})
-     * @Security("has_role('ROLE_MCFEDR_AWS_BROADCAST')")
+     * #Security("has_role('ROLE_MCFEDR_AWS_BROADCAST')")
      */
     public function broadcastAction(Request $request)
     {
